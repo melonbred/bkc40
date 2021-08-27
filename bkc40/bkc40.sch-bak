@@ -2104,53 +2104,41 @@ SWITCH MATRIX
 $Comp
 L Device:Rotary_Encoder_Switch SW56
 U 1 1 628E551D
-P 11600 14950
-F 0 "SW56" H 11600 15317 50  0000 C CNN
-F 1 "Rotary_Encoder_Switch" H 11600 15226 50  0000 C CNN
-F 2 "Rotary_Encoder:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm" H 11450 15110 50  0001 C CNN
-F 3 "~" H 11600 15210 50  0001 C CNN
-	1    11600 14950
+P 11700 13350
+F 0 "SW56" H 11700 13717 50  0000 C CNN
+F 1 "Rotary_Encoder_Switch" H 11700 13626 50  0000 C CNN
+F 2 "Rotary_Encoder:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm" H 11550 13510 50  0001 C CNN
+F 3 "~" H 11700 13610 50  0001 C CNN
+	1    11700 13350
 	1    0    0    -1  
 $EndComp
-Text GLabel 11900 14850 2    50   Input ~ 0
+Text GLabel 12000 13250 2    50   Input ~ 0
 ENC_C
-Text GLabel 11900 15050 2    50   Input ~ 0
+Text GLabel 12000 13450 2    50   Input ~ 0
 ENC_R
 Text GLabel 21450 2900 0    50   Input ~ 0
 ENC_C
 Text GLabel 21850 2900 2    50   Input ~ 0
 ENC_R
-Text GLabel 11300 14850 0    50   Input ~ 0
+Text GLabel 11400 13250 0    50   Input ~ 0
 ENC_A
-Text GLabel 11300 15050 0    50   Input ~ 0
+Text GLabel 11400 13450 0    50   Input ~ 0
 ENC_B
 $Comp
 L power:GND #PWR0118
 U 1 1 6292FEB3
-P 10850 14950
-F 0 "#PWR0118" H 10850 14700 50  0001 C CNN
-F 1 "GND" H 10855 14777 50  0000 C CNN
-F 2 "" H 10850 14950 50  0001 C CNN
-F 3 "" H 10850 14950 50  0001 C CNN
-	1    10850 14950
+P 10950 13350
+F 0 "#PWR0118" H 10950 13100 50  0001 C CNN
+F 1 "GND" H 10955 13177 50  0000 C CNN
+F 2 "" H 10950 13350 50  0001 C CNN
+F 3 "" H 10950 13350 50  0001 C CNN
+	1    10950 13350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10850 14950 11300 14950
+	10950 13350 11400 13350
 Text GLabel 3950 12650 2    50   Input ~ 0
 ENC_A
 Text GLabel 3950 12750 2    50   Input ~ 0
 ENC_B
-Wire Notes Line
-	10500 15600 12800 15600
-Wire Notes Line width 39
-	12800 15600 12800 14250
-Wire Notes Line width 39
-	12800 14250 10100 14250
-Wire Notes Line width 39
-	10100 14250 10100 15600
-Wire Notes Line width 39
-	10100 15600 12800 15600
-Text Notes 11800 15500 2    118  Italic 24
-ROTARY ENCODER
 $EndSCHEMATC
