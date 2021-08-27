@@ -4,3 +4,6 @@
 [submodule "bkc40/random-keyboard-parts.pretty"]
 	path = bkc40/random-keyboard-parts.pretty
 	url = https://github.com/ai03-2725/random-keyboard-parts.pretty
+[submodule "bkc40/Type-C.pretty"]
+	path = bkc40/Type-C.pretty
+	url = https://github.com/ai03-2725/Type-C.pretty
