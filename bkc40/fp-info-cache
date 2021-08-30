@@ -1,4 +1,4 @@
-19534772056164771
+19538032580416771
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -84392,7 +84392,21 @@ melonpan_banner_800
 0
 0
 silk
+melonpan_banner_1000_mask
+
+
+0
+0
+0
+silk
 turtle_pan
+
+
+0
+0
+0
+silk
+turtle_pan_800_bmask
 
 
 0

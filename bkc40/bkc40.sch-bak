@@ -1377,17 +1377,6 @@ Connection ~ 21850 2900
 Wire Wire Line
 	21850 2900 21850 3350
 $Comp
-L MCU_Microchip_ATmega:ATmega32U4-AU U1
-U 1 1 621CC68E
-P 3350 12950
-F 0 "U1" H 3350 11061 50  0000 C CNN
-F 1 "ATmega32U4-AU" H 3350 10970 50  0000 C CNN
-F 2 "Package_QFP:TQFP-44_10x10mm_P0.8mm" H 3350 12950 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7766-8-bit-AVR-ATmega16U4-32U4_Datasheet.pdf" H 3350 12950 50  0001 C CNN
-	1    3350 12950
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+5V #PWR0101
 U 1 1 621CDD87
 P 3600 11150
@@ -1398,14 +1387,6 @@ F 3 "" H 3600 11150 50  0001 C CNN
 	1    3600 11150
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3600 11150 3450 11150
-Connection ~ 3350 11150
-Wire Wire Line
-	3350 11150 3250 11150
-Connection ~ 3450 11150
-Wire Wire Line
-	3450 11150 3350 11150
 $Comp
 L power:GND #PWR0102
 U 1 1 621D893B
@@ -1417,11 +1398,6 @@ F 3 "" H 2850 14750 50  0001 C CNN
 	1    2850 14750
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2850 14750 3250 14750
-Connection ~ 3250 14750
-Wire Wire Line
-	3250 14750 3350 14750
 $Comp
 L Connector_Generic:Conn_01x02 J1
 U 1 1 621E3EFC
@@ -2019,39 +1995,39 @@ $EndComp
 Connection ~ 7350 10850
 Wire Wire Line
 	7350 10850 7100 10850
-Text GLabel 3950 13850 2    50   Input ~ 0
-COL10
-Text GLabel 3950 13950 2    50   Input ~ 0
-COL09
-Text GLabel 3950 14050 2    50   Input ~ 0
-COL08
-Text GLabel 3950 14150 2    50   Input ~ 0
-COL07
-Text GLabel 3950 14250 2    50   Input ~ 0
-COL06
-Text GLabel 3950 14350 2    50   Input ~ 0
-COL05
-Text GLabel 3950 12450 2    50   Input ~ 0
-COL04
-Text GLabel 3950 12350 2    50   Input ~ 0
-COL03
 Text GLabel 3950 12050 2    50   Input ~ 0
-COL02
+COL10
 Text GLabel 3950 11950 2    50   Input ~ 0
-COL01
+COL09
 Text GLabel 3950 11850 2    50   Input ~ 0
-COL00
+COL08
 Text GLabel 3950 13350 2    50   Input ~ 0
-ROW03
+COL07
 Text GLabel 3950 13250 2    50   Input ~ 0
-COL12
+COL06
 Text GLabel 3950 13050 2    50   Input ~ 0
+COL05
+Text GLabel 3950 12950 2    50   Input ~ 0
+COL04
+Text GLabel 3950 12650 2    50   Input ~ 0
+COL03
+Text GLabel 3950 12750 2    50   Input ~ 0
+COL02
+Text GLabel 3950 12850 2    50   Input ~ 0
+COL01
+Text GLabel 3950 14250 2    50   Input ~ 0
+COL00
+Text GLabel 3950 14150 2    50   Input ~ 0
+ROW03
+Text GLabel 3950 12450 2    50   Input ~ 0
+COL12
+Text GLabel 3950 13850 2    50   Input ~ 0
 ROW00
 Wire Wire Line
 	21450 3350 21450 4950
-Text GLabel 3950 13150 2    50   Input ~ 0
+Text GLabel 3950 13650 2    50   Input ~ 0
 ROW01
-Text GLabel 3950 12950 2    50   Input ~ 0
+Text GLabel 3950 14350 2    50   Input ~ 0
 ROW02
 Wire Notes Line
 	5600 700  22700 700 
@@ -2104,41 +2080,80 @@ SWITCH MATRIX
 $Comp
 L Device:Rotary_Encoder_Switch SW56
 U 1 1 628E551D
-P 11700 13350
-F 0 "SW56" H 11700 13717 50  0000 C CNN
-F 1 "Rotary_Encoder_Switch" H 11700 13626 50  0000 C CNN
-F 2 "Rotary_Encoder:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm" H 11550 13510 50  0001 C CNN
-F 3 "~" H 11700 13610 50  0001 C CNN
-	1    11700 13350
+P 11600 14950
+F 0 "SW56" H 11600 15317 50  0000 C CNN
+F 1 "Rotary_Encoder_Switch" H 11600 15226 50  0000 C CNN
+F 2 "Rotary_Encoder:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm" H 11450 15110 50  0001 C CNN
+F 3 "~" H 11600 15210 50  0001 C CNN
+	1    11600 14950
 	1    0    0    -1  
 $EndComp
-Text GLabel 12000 13250 2    50   Input ~ 0
+Text GLabel 11900 14850 2    50   Input ~ 0
 ENC_C
-Text GLabel 12000 13450 2    50   Input ~ 0
+Text GLabel 11900 15050 2    50   Input ~ 0
 ENC_R
 Text GLabel 21450 2900 0    50   Input ~ 0
 ENC_C
 Text GLabel 21850 2900 2    50   Input ~ 0
 ENC_R
-Text GLabel 11400 13250 0    50   Input ~ 0
+Text GLabel 11300 14850 0    50   Input ~ 0
 ENC_A
-Text GLabel 11400 13450 0    50   Input ~ 0
+Text GLabel 11300 15050 0    50   Input ~ 0
 ENC_B
 $Comp
 L power:GND #PWR0118
 U 1 1 6292FEB3
-P 10950 13350
-F 0 "#PWR0118" H 10950 13100 50  0001 C CNN
-F 1 "GND" H 10955 13177 50  0000 C CNN
-F 2 "" H 10950 13350 50  0001 C CNN
-F 3 "" H 10950 13350 50  0001 C CNN
-	1    10950 13350
+P 10850 14950
+F 0 "#PWR0118" H 10850 14700 50  0001 C CNN
+F 1 "GND" H 10855 14777 50  0000 C CNN
+F 2 "" H 10850 14950 50  0001 C CNN
+F 3 "" H 10850 14950 50  0001 C CNN
+	1    10850 14950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10950 13350 11400 13350
-Text GLabel 3950 12650 2    50   Input ~ 0
+	10850 14950 11300 14950
+Text GLabel 4500 11500 2    50   Input ~ 0
 ENC_A
-Text GLabel 3950 12750 2    50   Input ~ 0
+Text GLabel 4500 11600 2    50   Input ~ 0
 ENC_B
+Wire Notes Line
+	10500 15600 12800 15600
+Wire Notes Line width 39
+	12800 15600 12800 14250
+Wire Notes Line width 39
+	12800 14250 10100 14250
+Wire Notes Line width 39
+	10100 14250 10100 15600
+Wire Notes Line width 39
+	10100 15600 12800 15600
+Text Notes 11800 15500 2    118  Italic 24
+ROTARY ENCODER
+Wire Wire Line
+	3250 11150 3350 11150
+Wire Wire Line
+	2850 14750 3250 14750
+Connection ~ 3350 11150
+Wire Wire Line
+	3350 14750 3250 14750
+Connection ~ 3250 14750
+Connection ~ 3450 11150
+Wire Wire Line
+	3450 11150 3600 11150
+Wire Wire Line
+	3350 11150 3450 11150
+$Comp
+L MCU_Microchip_ATmega:ATmega32U4-MU U2
+U 1 1 612D3612
+P 3350 12950
+F 0 "U2" H 3350 11061 50  0000 C CNN
+F 1 "ATmega32U4-MU" H 3350 10970 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-44-1EP_7x7mm_P0.5mm_EP5.2x5.2mm" H 3350 12950 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7766-8-bit-AVR-ATmega16U4-32U4_Datasheet.pdf" H 3350 12950 50  0001 C CNN
+	1    3350 12950
+	1    0    0    -1  
+$EndComp
+NoConn ~ 2750 12050
+Text GLabel 3950 12350 2    50   Input ~ 0
+COL11
 $EndSCHEMATC
