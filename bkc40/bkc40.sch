@@ -2121,17 +2121,6 @@ Wire Wire Line
 	3450 11150 3600 11150
 Wire Wire Line
 	3350 11150 3450 11150
-$Comp
-L MCU_Microchip_ATmega:ATmega32U4-MU U2
-U 1 1 612D3612
-P 3350 12950
-F 0 "U2" H 3350 11061 50  0000 C CNN
-F 1 "ATmega32U4-MU" H 3350 10970 50  0000 C CNN
-F 2 "Package_DFN_QFN:QFN-44-1EP_7x7mm_P0.5mm_EP5.2x5.2mm" H 3350 12950 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7766-8-bit-AVR-ATmega16U4-32U4_Datasheet.pdf" H 3350 12950 50  0001 C CNN
-	1    3350 12950
-	1    0    0    -1  
-$EndComp
 NoConn ~ 2750 12050
 Text GLabel 3950 12350 2    50   Input ~ 0
 COL11
@@ -2192,4 +2181,15 @@ Wire Wire Line
 	7550 13500 7550 14550
 Wire Wire Line
 	7550 14550 8800 14550
+$Comp
+L MCU_Microchip_ATmega:ATmega32U4-MU U2
+U 1 1 612D3612
+P 3350 12950
+F 0 "U2" H 3350 11061 50  0000 C CNN
+F 1 "ATmega32U4-MU" H 3350 10970 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-44-1EP_7x7mm_P0.5mm_EP5.2x5.2mm" H 3350 12950 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7766-8-bit-AVR-ATmega16U4-32U4_Datasheet.pdf" H 3350 12950 50  0001 C CNN
+	1    3350 12950
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
